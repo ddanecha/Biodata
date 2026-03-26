@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Education - Diwakar Danecha</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; }
+        nav { background: #fff; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 20px; }
+        .logo { font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; cursor: pointer; text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; gap: 2rem; }
+        .nav-link { text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #667eea; }
+        main { margin-top: 70px; }
+        .page-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
+        .page-hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .page-content { max-width: 900px; margin: 0 auto; padding: 80px 20px 100px 20px; }
+        .section-title { font-size: 2rem; color: #667eea; margin: 40px 0 25px 0; font-weight: 600; }
+        .education-item { background: #f7fafc; padding: 25px; margin-bottom: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; border-top: 4px solid #667eea; }
+        .education-item:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.15); }
+        .education-item h3 { color: #667eea; font-size: 1.3rem; margin-bottom: 5px; }
+        .education-item .institution { color: #764ba2; font-weight: 600; }
+        .education-item .year { color: #999; font-size: 0.9rem; margin-bottom: 10px; }
+        .education-item p { color: #555; line-height: 1.6; }
+        .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .cert-item { background: white; padding: 20px; border-radius: 8px; border-left: 4px solid #764ba2; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .cert-item h4 { color: #667eea; margin-bottom: 8px; }
+        .cert-item p { color: #999; font-size: 0.9rem; }
+        footer { background: #2d3748; color: white; padding: 2rem; text-align: center; margin-top: 60px; }
+        @media (max-width: 768px) { .nav-menu { gap: 1rem; font-size: 0.9rem; } .page-hero h1 { font-size: 2rem; } .cert-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-code"></i> DD Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="education.html" class="nav-link active">Education</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-hero">
+            <h1>🎓 My Education</h1>
+        </section>
+
+        <section class="page-content">
+            <div class="section-title">Degrees</div>
+            
+            <div class="education-item">
+                <h3><i class="fas fa-graduation-cap"></i> Bachelor of Science in Computer Science</h3>
+                <div class="institution">Indian Institute of Technology (IIT)</div>
+                <div class="year">2016 - 2020</div>
+                <p>Graduated with distinction. GPA: 8.5/10. Specialized in Web Development and Data Structures. Active member of coding club and won multiple hackathons.</p>
+            </div>
+
+            <div class="education-item">
+                <h3><i class="fas fa-graduation-cap"></i> Higher Secondary Education</h3>
+                <div class="institution">Delhi Public School</div>
+                <div class="year">2014 - 2016</div>
+                <p>PCM Stream with 92% aggregate. Participated in National Science Olympiad and cleared multiple coding competitions.</p>
+            </div>
+
+            <div class="section-title">Certifications</div>
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <h4><i class="fas fa-certificate"></i> React Developer</h4>
+                    <p><strong>Udemy</strong> - 2022</p>
+                    <p>Complete React course with hooks, routing, and state management.</p>
+                </div>
+                <div class="cert-item">
+                    <h4><i class="fas fa-certificate"></i> Full Stack Web Development</h4>
+                    <p><strong>Coursera</strong> - 2021</p>
+                    <p>MERN stack specialization with real-world projects.</p>
+                </div>
+                <div class="cert-item">
+                    <h4><i class="fas fa-certificate"></i> AWS Certified Cloud Practitioner</h4>
+                    <p><strong>Amazon Web Services</strong> - 2023</p>
+                    <p>Cloud computing fundamentals and AWS services.</p>
+                </div>
+                <div class="cert-item">
+                    <h4><i class="fas fa-certificate"></i> Docker & Kubernetes</h4>
+                    <p><strong>Linux Academy</strong> - 2022</p>
+                    <p>Containerization and orchestration fundamentals.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Diwakar Danecha. All rights reserved. | Designed with <i class="fas fa-heart"></i> | Portfolio v2.0</p>
+    </footer>
+</body>
+</html>
