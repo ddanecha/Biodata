@@ -1,0 +1,28 @@
+.home {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+}
+
+.header {
+    background-color: #4CAF50;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.main-content {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.footer {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
