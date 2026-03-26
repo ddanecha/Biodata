@@ -3,64 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Biodata</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1, h2, h3 {
+            margin: 0;
+        }
+        section {
+            padding: 20px 0;
+            background: #fff;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .skills, .experience, .education, .projects, .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .skill, .project {
+            padding: 10px;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Biodata</h1>
+        <h1>My Professional Biodata</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="about">
+    <div class="container">
+        <section class="hero">
             <h2>About Me</h2>
-            <p>I am a passionate individual with experience in web development and a desire to learn more.</p>
+            <p>Welcome to my professional biodata. I am dedicated and passionate about my career and continually strive for excellence.</p>
         </section>
-        <section id="skills">
+        <section class="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
+            <div class="skill"><i class="fas fa-code"></i> Web Development</div>
+            <div class="skill"><i class="fas fa-database"></i> Database Management</div>
+            <div class="skill"><i class="fas fa-paint-brush"></i> UI/UX Design</div>
         </section>
-        <section id="experience">
+        <section class="experience">
             <h2>Experience</h2>
-            <h3>Web Developer</h3>
-            <p>Company Name - January 2020 to Present</p>
-            <p>Developed and maintained web applications.</p>
+            <div class="job"><strong>Software Engineer</strong> at XYZ Company (2020 - Present)</div>
+            <div class="job"><strong>Intern</strong> at ABC Corp (2019 - 2020)</div>
         </section>
-        <section id="education">
+        <section class="education">
             <h2>Education</h2>
-            <h3>Bachelor of Science in Computer Science</h3>
-            <p>University Name - Graduated: 2019</p>
+            <div class="degree"><strong>BSc in Computer Science</strong> - University of Science (2016 - 2020)</div>
         </section>
-        <section id="projects">
+        <section class="projects">
             <h2>Projects</h2>
-            <h3>Project Name 1</h3>
-            <p>Description of project 1.</p>
-            <h3>Project Name 2</h3>
-            <p>Description of project 2.</p>
+            <div class="project"><strong>Project A</strong> - <i>Description of project A.</i></div>
+            <div class="project"><strong>Project B</strong> - <i>Description of project B.</i></div>
         </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: example@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/example">linkedin.com/in/example</a></p>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Email: myemail@example.com</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/myprofile">myprofile</a></p>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 ddanecha. All rights reserved.</p>
-    </footer>
+    </div>
 </body>
 </html>
