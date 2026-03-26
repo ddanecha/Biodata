@@ -3,33 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Timeline</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Experience - Diwakar Danecha</title>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .timeline { position: relative; padding: 1em; }
-        .event { margin: 1em 0; padding: 1em; border-left: 3px solid #4CAF50; }
-        .event h2 { margin: 0; }
-        .event p { margin: 0.5em 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; }
+        nav { background: #fff; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 1rem 20px; }
+        .logo { font-size: 1.5rem; font-weight: bold; background: linear-gradient(135deg, #667eea, #764ba2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; cursor: pointer; text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; gap: 2rem; }
+        .nav-link { text-decoration: none; color: #333; font-weight: 500; transition: color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #667eea; }
+        main { margin-top: 70px; }
+        .page-hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 20px; text-align: center; }
+        .page-hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .page-content { max-width: 900px; margin: 0 auto; padding: 80px 20px 100px 20px; }
+        .section-title { font-size: 2rem; color: #667eea; margin: 40px 0 25px 0; font-weight: 600; }
+        .timeline { position: relative; padding: 20px 0; }
+        .timeline-item { background: #f7fafc; padding: 25px; margin-bottom: 30px; border-radius: 10px; border-left: 4px solid #667eea; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s; }
+        .timeline-item:hover { transform: translateX(5px); box-shadow: 0 8px 15px rgba(0,0,0,0.15); }
+        .timeline-item h3 { color: #667eea; font-size: 1.3rem; margin-bottom: 5px; }
+        .timeline-item .company { color: #764ba2; font-weight: 600; }
+        .timeline-item .dates { color: #999; font-size: 0.9rem; margin-bottom: 10px; }
+        .timeline-item p { color: #555; line-height: 1.6; }
+        footer { background: #2d3748; color: white; padding: 2rem; text-align: center; margin-top: 60px; }
+        @media (max-width: 768px) { .nav-menu { gap: 1rem; font-size: 0.9rem; } .page-hero h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
-    <h1>Work Experience Timeline</h1>
-    <div class="timeline">
-        <div class="event">
-            <h2>Software Engineer</h2>
-            <p>Company A - 2022-01 to Present</p>
-            <p>Responsibilities: Developing web applications, collaborating with team members.</p>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo"><i class="fas fa-code"></i> DD Portfolio</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="experience.html" class="nav-link active">Experience</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+            </ul>
         </div>
-        <div class="event">
-            <h2>Intern Developer</h2>
-            <p>Company B - 2021-06 to 2021-12</p>
-            <p>Responsibilities: Assisted in software development projects, participated in code reviews.</p>
-        </div>
-        <div class="event">
-            <h2>Freelance Developer</h2>
-            <p>Self-Employed - 2020-01 to 2021-05</p>
-            <p>Responsibilities: Developed websites for local businesses, managed client relationships.</p>
-        </div>
-    </div>
+    </nav>
+
+    <main>
+        <section class="page-hero">
+            <h1>💼 My Experience</h1>
+        </section>
+
+        <section class="page-content">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3><i class="fas fa-briefcase"></i> Senior Web Developer</h3>
+                    <div class="company">Tech Solutions Inc.</div>
+                    <div class="dates">January 2023 - Present</div>
+                    <p>Leading frontend development for multiple projects. Architecting scalable web applications using React and Node.js. Mentoring junior developers and implementing best practices.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3><i class="fas fa-briefcase"></i> Full Stack Developer</h3>
+                    <div class="company">Digital Innovations LLC</div>
+                    <div class="dates">June 2021 - December 2022</div>
+                    <p>Developed end-to-end web applications using MERN stack. Collaborated with design and backend teams. Optimized performance resulting in 40% faster load times.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3><i class="fas fa-briefcase"></i> Junior Web Developer</h3>
+                    <div class="company">Creative Web Studios</div>
+                    <div class="dates">January 2020 - May 2021</div>
+                    <p>Built responsive websites using HTML, CSS, and JavaScript. Implemented UI designs from Figma. Maintained and updated existing client websites.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3><i class="fas fa-briefcase"></i> Internship - Frontend Developer</h3>
+                    <div class="company">StartUp Innovations</div>
+                    <div class="dates">June 2019 - December 2019</div>
+                    <p>Gained hands-on experience in web development. Learned React basics and assisted in building user interfaces. Worked on bug fixes and feature enhancements.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Diwakar Danecha. All rights reserved. | Designed with <i class="fas fa-heart"></i> | Portfolio v2.0</p>
+    </footer>
 </body>
 </html>
